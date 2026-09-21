@@ -24,10 +24,11 @@ The table below lists the tools used in this report and their respective purpose
 
 | **Tool** | **Purpose** |
 |---|---|
-| **John The Ripper & Networkwalks Online Tools** | password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+| **John The Ripper ** | password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+| **onlinehashcrack.** | PDF hash Extractor - IT will extract the information needed from your PDF to convert it to hash, also known as pdf2john or pdf2hashcat. |
 | ** Networkwalks password cracker Online Tools** | password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
 | ** Networkwalks Online Hash Calculaor Tools** | Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512, or extract a crackable hash from a password-protected PDF.|
-| **onlinehashcrack.** | PDF hash Extractor - IT will extract the information needed from your PDF to convert it to hash, also known as pdf2john or pdf2hashcat. |
+
 
 
 ####
@@ -35,52 +36,24 @@ The table below lists the tools used in this report and their respective purpose
 
 ## 3.1 Password Cracking Using JTK (John The Ripper ) tool
 
-For the password cracking stage, JTK was downloaded and installed to  perform the task
-##
-# WHOIS 
-**WHOIS** is used to gather publicly available domain registration information and determine the name servers associated with the domain. This provided useful information about the domain's registration and DNS infrastructure.
+For the password-cracking phase of the assessment, John the Ripper (JTR) was downloaded, installed, and configured to perform a controlled password recovery test on the protected PDF file. The tool was used to assess the strength of the PDF password by systematically testing potential password combinations against the file’s password hash. This process demonstrated how password cracking tools can be used during authorized security assessments to identify weak or easily guessable passwords.
+<img width="1237" height="571" alt="image" src="https://github.com/user-attachments/assets/9632387d-1b70-4211-830f-b5408b807862" />
+<img width="672" height="358" alt="john the ripper app" src="https://github.com/user-attachments/assets/177101f4-e2a7-4d05-b556-3c0e40270037" />
+<img width="912" height="510" alt="image" src="https://github.com/user-attachments/assets/72f5b5c5-f599-4aad-888b-fe1601c9c513" />
 
-###
-<img width="1366" height="640" alt="image" src="https://github.com/user-attachments/assets/1a225842-0ff1-45c5-8c75-7c1fa64053e6" />
-<img width="1045" height="620" alt="image" src="https://github.com/user-attachments/assets/634d76eb-6261-45d3-a35c-354883025efd" />
-<img width="1061" height="656" alt="image" src="https://github.com/user-attachments/assets/6e9e0a2d-c699-47ab-86f0-4129e4ca9a5e" />
+Before attempting to crack the password using John the Ripper (JTR), the password-protected PDF first had to be converted into a crackable hash format. An online tool, OnlineHashCrack, was used to extract the necessary password-hash information from the locked PDF. The PDF file was uploaded to the tool, which processed the file and generated the corresponding hash value required for the password cracking stage.
+The extracted hash was then used as input for John the Ripper, allowing the tool to perform a controlled passwordrecovery test against the protected PDF.
 
+<img width="859" height="610" alt="Screenshot 2026-09-20 202622" src="https://github.com/user-attachments/assets/aa80710b-24e1-4e13-80e1-53458a77c975" />
+<img width="1235" height="693" alt="Screenshot 2026-09-20 202922" src="https://github.com/user-attachments/assets/5caaf8a7-8638-4b32-8bd2-7a3e83ccb9ba" />
+<img width="1312" height="571" alt="Screenshot 2026-09-20 203058" src="https://github.com/user-attachments/assets/31d50d1c-377f-4d35-90aa-f75293f42e06" />
 
-
-###
-# WHATWEB
-Next, I used **WhatWeb** to fingerprint the technologies powering the website. The results revealed the use of **WordPress 7.0.4** and **WP Download Manager 3.3.58**, as well as other technology-related information exposed by the website.
-
-<img width="1366" height="368" alt="image" src="https://github.com/user-attachments/assets/9af390d9-3985-4f04-a8ea-f5804e7b579f" />
-
-###
-# NSLOOKUP
-I then performed a DNS lookup with **Nslookup** to determine the IP address associated with the domain. The result resolved **networkwalks.com** to **192.232.216.135**
-<img width="1366" height="294" alt="image" src="https://github.com/user-attachments/assets/6b10eb93-f232-4e84-babe-fdb6851d8886" />
-
-
-###
-
-# CURL -I
-
-I then used **cURL** with the `-I` option to examine the website's HTTP response headers. The output revealed additional information about the web application, including the presence of the WordPress REST API endpoint `/wp-json/`.
-<img width="1353" height="259" alt="curl -i" src="https://github.com/user-attachments/assets/28322a83-8e94-40e2-983b-58a5e084e11d" />
-
-
-
-
-###
-# WAFW00F
-Next, I ran **Wafw00f** to identify whether a Web Application Firewall (WAF) was deployed in front of the website. The results indicated the presence of **ModSecurity (SpiderLabs)**.
-<img width="1366" height="544" alt="image" src="https://github.com/user-attachments/assets/7a88526b-f7e0-40b0-a643-af209ccfca04" />
-
-
-
-###
-# DNSRECON
-Finally, I used **DNSRecon** to gather available DNS information associated with the domain. The enumeration revealed details related to **name servers, mail servers, SPF/TXT records, service records, and DNS software**.
-<img width="1366" height="414" alt="image" src="https://github.com/user-attachments/assets/d4bb62c1-4821-4b40-b956-26b9a65252d1" />
-
+The Hash value was saved in a text file to upload to john the ripper so as to crack the password and after uploading the hash value it generated the password for the locked app and used to unlock the PDF file and likewise process was done to the other two fil
+<img width="1364" height="610" alt="password " src="https://github.com/user-attachments/assets/b7714541-b243-470a-87d2-3d9563a64942" />
+<img width="1306" height="574" alt="password2" src="https://github.com/user-attachments/assets/ac8d4f8b-1376-4d71-9c30-8722f7b38ce2" />
+<img width="1247" height="698" alt="job done" src="https://github.com/user-attachments/assets/6049b980-4881-4cb6-b360-c998b1e246be" />
+<img width="1095" height="563" alt="break" src="https://github.com/user-attachments/assets/2ee09e61-4d46-470f-a385-7048d0c55646" />
+<img width="1068" height="643" alt="break3" src="https://github.com/user-attachments/assets/7d08c598-ce71-4d25-a1bb-97926c8e80ac" />
 
 These findings provided additional visibility into the target's **web-server configuration, security controls, and DNS infrastructure**, contributing to the overall reconnaissance profile.
 
