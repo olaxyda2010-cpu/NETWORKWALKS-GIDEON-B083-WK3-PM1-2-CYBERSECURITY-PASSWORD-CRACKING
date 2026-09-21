@@ -7,14 +7,14 @@
 | **Pentester Name**<br>*(Cybersecurity Professional)* | **OYEWALE OLAOLUWA GIDEON** |
 | **Program/Batch** | B082-Networkwalks |
 | **Date** | 21 SEPTEMBER 2026 |
-| **Modules Completed** | W3-PM1 (Password Cracking With JTR)<br>W3-PM2 (Password Cracking With NW Tools) |
+| **Modules Completed** | W3-PM1 (Password Cracking With JTR)<br>W3-PM2 (Password Cracking With NW Online Tools) |
 | **Client/Target** | 1. Networkwalks Locked PDF Files (secured written permission already)|
 | **Permission secured from client?** | **Yes** |
 | **Phases Covered** | **Phase 1:** Using Of John The Ripper to Crack The Password<br>**Phase 2:** Using Of NetworkWalks Tools to Crack The Password<br>|
 ###
 
 ##1. Introduction
-This report documents to Week 3 cybersecurity activities completed as part of my ongoing internship at Networkwalks. The first module focuses on **Locked Networkwalks PDF File to be password crack by John The Ripper Tool  (W3-PM1)**, while the second covers **Locked Networkwalks PDF File to be password crack by Networkwalks Tools (W3-PM2)**.
+This report documents to Week 3 cybersecurity activities completed as part of my ongoing internship at Networkwalks. The first module focuses on **Locked Networkwalks PDF File to be password crack by John The Ripper Tool  (W3-PM1)**, while the second covers **Locked Networkwalks PDF File to be password crack by Networkwalks online  Tools (W3-PM2)**.
 Together, these exercises demonstrate the progression from **breaking the password of a passworded Networkwalks PDF files and accessing the information on it network**.
 All activities were performed using **John The Ripper tools  to crack the password of the PDF file cracking password exercise** and a **Networkwalks Tools  to crack the password of the PDF file cracking password exercise**. Each section documents the command or procedure used, the observed output, supporting screenshot evidence, and a brief explanation of the security relevance of each finding.
 
@@ -24,23 +24,18 @@ The table below lists the tools used in this report and their respective purpose
 
 | **Tool** | **Purpose** |
 |---|---|
-| **John The Ripper & Networkwalks Tools** |  |
-| **WHOIS** | Retrieve domain registration information such as ownership details, registration dates, and name servers |
-| **WhatWeb** | Identify web technologies, servers, CMS platforms, plugins, and related information |
-| **nslookup** | Resolve domain names to their corresponding IP addresses using DNS |
-| **curl -I** | Retrieve and examine HTTP response headers from the target website |
-| **WAFW00F** | Identify whether a Web Application Firewall (WAF) is protecting the website |
-| **dnsrecon** | Enumerate DNS records including NS, MX, SPF, TXT, and SRV records |
-| **Zenmap (Nmap GUI)** | Discover live hosts, open ports, and network information on the local subnet |
-| **Windows CMD** | Identify local IP address and MAC address information |
+| **John The Ripper & Networkwalks Online Tools** | password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+| ** Networkwalks password cracker Online Tools** | password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+| ** Networkwalks Online Hash Calculaor Tools** | Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512, or extract a crackable hash from a password-protected PDF.|
+| **onlinehashcrack.** | PDF hash Extractor - IT will extract the information needed from your PDF to convert it to hash, also known as pdf2john or pdf2hashcat. |
+
 
 ####
 # 3. Activities Performed
 
-## 3.1 Footprinting & Reconnaissance
+## 3.1 Password Cracking Using JTK (John The Ripper ) tool
 
-During the reconnaissance stage, I conducted a passive assessment of the **networkwalks.com** domain using six Kali Linux tools: **WHOIS, WhatWeb, Nslookup, cURL, Wafw00f, and DNSRecon**. Each tool was used to examine a different aspect of the target's publicly accessible infrastructure.
-I started with 
+For the password cracking stage, JTK was downloaded and installed to  perform the task
 ##
 # WHOIS 
 **WHOIS** is used to gather publicly available domain registration information and determine the name servers associated with the domain. This provided useful information about the domain's registration and DNS infrastructure.
