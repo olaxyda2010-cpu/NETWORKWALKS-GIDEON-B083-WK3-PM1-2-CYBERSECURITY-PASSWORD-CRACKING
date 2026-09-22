@@ -105,6 +105,16 @@ The exercise demonstrated the importance of understanding how password-protected
 Overall, the practical strengthened my understanding of **password hashing, hash extraction, passwordcracking methodologies, and security assessment tools**. It also reinforced the importance of implementing strong, unique passwords and appropriate security controls when protecting sensitive information.
 
 ###
+
+## 🔭 Tools and Resources ##
+
+To install 7-Zip: [https://7-zip.org/download.html.](https://drive.usercontent.google.com/download?id=1YeyV7pwN6gRyKGUKqwyhGv0DKf_vFf8j&export=download&authuser=0&confirm=t&uuid=4c9b5f3b-3360-4039-bc23-2ccec70591a9&at=AMrWOn2lg6GmeJ2__xZ1Hm6WEUdN:1790056324880)
+
+To install VirtualBox Machine: https://virtualbox.org/wiki/Downloads.
+
+To install Kali Linux: https://kali.org/get-kali.
+
+---
 **👤 Author**
 
 **Oyewale Olaoluwa Gideon**  
