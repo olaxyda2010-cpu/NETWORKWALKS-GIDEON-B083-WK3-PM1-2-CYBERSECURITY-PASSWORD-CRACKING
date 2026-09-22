@@ -24,10 +24,10 @@ The table below lists the tools used in this report and their respective purpose
 
 | **Tool** | **Purpose** |
 |---|---|
-| **John The Ripper ** | password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
-| **onlinehashcrack.** | PDF hash Extractor - IT will extract the information needed from your PDF to convert it to hash, also known as pdf2john or pdf2hashcat. |
-| ** Networkwalks password cracker Online Tools** | password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
-| ** Networkwalks Online Hash Calculaor Tools** | Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512, or extract a crackable hash from a password-protected PDF.|
+|**John The Ripper **| password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+|**onlinehashcrack.**| PDF hash Extractor - IT will extract the information needed from your PDF to convert it to hash, also known as pdf2john or pdf2hashcat. |
+|** Networkwalks password cracker Online Tools**| password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+|** Networkwalks Online Hash Calculaor Tools**| Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512, or extract a crackable hash from a password-protected PDF.|
 
 
 
@@ -96,19 +96,13 @@ After the hash value was created from the uploaded PDF file Networkwalks Passwor
 
 ## 6. Conclusion
 
+### Conclusion
 
-This practical exercise provided valuable hands-on experience in the **reconnaissance, footprinting, network discovery, and initial security assessment phases of penetration testing**. The activities demonstrated how security professionals can systematically gather information about a target and use the collected data to develop an initial understanding of its digital infrastructure.
+The practical activities provided valuable hands-on experience in **password security assessment and password recovery techniques** using both GUI and online tools. **John the Ripper (JTR)** was used to analyze extracted PDF password hashes and recover the passwords through systematic password-cracking techniques. The same objective was subsequently achieved using **NetworkWalks online tools**, providing a practical comparison between different approaches to password recovery.
 
-During the **footprinting and reconnaissance phase**, I used several Kali Linux tools, including **WHOIS, WhatWeb, Nslookup, cURL, Wafw00f, and DNSRecon**. Each tool provided a different perspective of the target environment. The assessment revealed information relating to domain registration, DNS infrastructure, the associated IP address, web technologies, HTTP response headers, publicly accessible endpoints, and the presence of a Web Application Firewall. Combining these results demonstrated how individual pieces of publicly available information can contribute to a broader understanding of a target's infrastructure.
+The exercise demonstrated the importance of understanding how password-protected files can be assessed when the necessary authorization and hash information are available. It also highlighted the security risks associated with **weak or easily guessable passwords**, as such passwords can potentially be recovered using automated cracking techniques.
 
-The **network-scanning exercise** provided practical experience using **Zenmap** to identify active hosts within an authorized local network. By first determining the local IP address and subnet using Windows networking commands, I was able to configure Zenmap and perform host discovery. The scan demonstrated how network-scanning tools can identify responsive devices and provide information such as IP and MAC addresses. The Zenmap topology feature also provided a visual representation of the discovered network environment.
-
-The exercises highlighted the importance of conducting reconnaissance and scanning in a **structured, controlled, and authorized manner**. Information gathered during these stages can help security professionals understand the attack surface, identify areas requiring further investigation, and prioritize appropriate security controls. At the same time, the findings demonstrate why organizations should minimize unnecessary information exposure and maintain visibility over devices and services operating within their networks.
-
-From a learning perspective, this practical strengthened my ability to work with **Kali Linux, Windows networking tools, Zenmap, Nmap-based scanning, DNS enumeration, web technology fingerprinting, and basic security analysis**. It also improved my understanding of how reconnaissance findings can be documented, interpreted, and translated into potential security risks and recommendations.
-
-Overall, the project provided a practical foundation for progressing into more advanced stages of security assessment, including **service enumeration, vulnerability identification, exploitation testing, and security validation**. All activities documented in this report were conducted within controlled environments and against systems for which appropriate authorization was available.
-
+Overall, the practical strengthened my understanding of **password hashing, hash extraction, passwordcracking methodologies, and security assessment tools**. It also reinforced the importance of implementing strong, unique passwords and appropriate security controls when protecting sensitive information.
 
 ###
 **👤 Author**
@@ -121,5 +115,5 @@ LinkedIn: www.linkedin.com/in/oyewale-olaouwa-60b252bb
 
 **📌 Project Information**
 
-**Program Name:** Cybersecurity Internship Program at Networkwalks | **Week:** 02 | **Project:** Footprinting & Network Scanning Phases  | **Repository:** GitHub
+**Program Name:** Cybersecurity Internship Program at Networkwalks | **Week:** 03 | **Project:** Footprinting & Network Scanning Phases  | **Repository:** GitHub
 
