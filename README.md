@@ -24,10 +24,10 @@ The table below lists the tools used in this report and their respective purpose
 
 | **Tool** | **Purpose** |
 |---|---|
-|**John The Ripper **| password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+|**John The Ripper**| password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
 |**onlinehashcrack.**| PDF hash Extractor - IT will extract the information needed from your PDF to convert it to hash, also known as pdf2john or pdf2hashcat. |
-|** Networkwalks password cracker Online Tools**| password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
-|** Networkwalks Online Hash Calculaor Tools**| Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512, or extract a crackable hash from a password-protected PDF.|
+|**Networkwalks password cracker Online Tools**| password-cracking and password-auditing tool . It tests password hashes to determine whether passwords are weak or susceptible to guessing attacks.|
+|**Networkwalks Online Hash Calculaor Tools**| Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512, or extract a crackable hash from a password-protected PDF.|
 
 
 
@@ -115,5 +115,5 @@ LinkedIn: www.linkedin.com/in/oyewale-olaouwa-60b252bb
 
 **📌 Project Information**
 
-**Program Name:** Cybersecurity Internship Program at Networkwalks | **Week:** 03 | **Project:** Footprinting & Network Scanning Phases  | **Repository:** GitHub
+**Program Name:** Cybersecurity Internship Program at Networkwalks | **Week:** 03 | **Project:** PASSWORD CRACKING WITH JTR AND NW TOOLS  | **Repository:** GitHub
 
