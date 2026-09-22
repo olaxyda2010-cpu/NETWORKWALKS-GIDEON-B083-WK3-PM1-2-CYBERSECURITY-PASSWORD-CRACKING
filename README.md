@@ -48,83 +48,50 @@ The extracted hash was then used as input for John the Ripper, allowing the tool
 <img width="1235" height="693" alt="Screenshot 2026-09-20 202922" src="https://github.com/user-attachments/assets/5caaf8a7-8638-4b32-8bd2-7a3e83ccb9ba" />
 <img width="1312" height="571" alt="Screenshot 2026-09-20 203058" src="https://github.com/user-attachments/assets/31d50d1c-377f-4d35-90aa-f75293f42e06" />
 
-The Hash value was saved in a text file to upload to john the ripper so as to crack the password and after uploading the hash value it generated the password for the locked app and used to unlock the PDF file and likewise process was done to the other two fil
+
+The extracted hash value was saved in a text file and subsequently provided as input to John the Ripper (JTR) for password-cracking analysis. JTR systematically tested potential password combinations against the extracted hash until the correct password was identified.
+
+Once the password was successfully recovered, it was used to unlock and access the protected PDF file. The same procedure was then repeated for the remaining two password-protected PDF files, including extracting their hash values, processing them with John the Ripper, recovering the corresponding passwords, and using the recovered credentials to unlock the files.
+
+
+
 <img width="1364" height="610" alt="password " src="https://github.com/user-attachments/assets/b7714541-b243-470a-87d2-3d9563a64942" />
 <img width="1306" height="574" alt="password2" src="https://github.com/user-attachments/assets/ac8d4f8b-1376-4d71-9c30-8722f7b38ce2" />
 <img width="1247" height="698" alt="job done" src="https://github.com/user-attachments/assets/6049b980-4881-4cb6-b360-c998b1e246be" />
 <img width="1095" height="563" alt="break" src="https://github.com/user-attachments/assets/2ee09e61-4d46-470f-a385-7048d0c55646" />
 <img width="1068" height="643" alt="break3" src="https://github.com/user-attachments/assets/7d08c598-ce71-4d25-a1bb-97926c8e80ac" />
 
-These findings provided additional visibility into the target's **web-server configuration, security controls, and DNS infrastructure**, contributing to the overall reconnaissance profile.
+
+This exercise demonstrated the practical application of password-cracking techniques in an authorized security-testing environment and highlighted the importance of using strong, complex passwords to protect sensitive documents.
 
 ###
-## 3.2 Network Scanning with Zenmap
+## 3.2 Password Cracking Using Networkwalks online  tool
 
-The second practical activity focused on **network discovery and host identification using Zenmap** within my local network. The objective was to determine the local IP address and subnet, identify active devices, obtain their IP and MAC addresses, and visualize the discovered hosts using Zenmap's network topology feature.
+The second practical activity focused on using NetworkWalks online tools to achieve the same password-recovery objective demonstrated with John the Ripper (JTR).
 
+As part of the exercise, the NetworkWalks Hash Calculator was used to process the password-protected PDF and extract the hash information required for password-cracking analysis. Similar to the previous practical, where OnlineHashCrack was used to obtain the hash for JTR, the NetworkWalks tool provided the hash value needed for the subsequent password-recovery process.
 
-
-I began by running the `ipconfig` command on Windows cmd to obtain the computer's local IP address and determine the applicable LAN subnet.
-
-<img width="971" height="500" alt="image" src="https://github.com/user-attachments/assets/fd6aecb4-dd65-480b-975d-9e388532452e" />
-
-
+This practical provided an opportunity to compare an online-based approach with the password cracking approach using John the Ripper, demonstrating how different tools can be used to perform similar password security assessments.
+<img width="911" height="477" alt="image" src="https://github.com/user-attachments/assets/8af95d9e-e299-4c52-beea-b3d91509efae" />
+<img width="1078" height="661" alt="image" src="https://github.com/user-attachments/assets/01bb794f-b868-4f07-8341-f62a498d715f" />
 
 
- I then configured Zenmap with the identified subnet which is **192.168.56.1** and performed a **Ping Scan** to detect devices that were actively responding on the network. The command nmap -sn -PR 192.168.1.0/24
-
-The practical exercise identified the following live hosts:
-
-- `192.168.1.1`
-- `192.168.1.193`
-- `192.168.1.56`
--
-
-The scan also returned corresponding **MAC address information** for the discovered devices.
-<img width="1356" height="498" alt="image" src="https://github.com/user-attachments/assets/313a9b4c-f327-4eb7-8c41-9fac69d01213" />
+After the hash value was created from the uploaded PDF file Networkwalks Password Cracker was used to crack the hash value to generate the real password and used to unlock the PDF file
+<img width="1124" height="546" alt="image" src="https://github.com/user-attachments/assets/4b1ab4ac-eac6-4461-8e27-0ffde23972ff" />
+<img width="989" height="621" alt="image" src="https://github.com/user-attachments/assets/d8e5ab4f-8d8f-4d30-95be-338a0d4bac20" />
+<img width="1247" height="698" alt="job done" src="https://github.com/user-attachments/assets/60f9ff76-89a5-40b8-a9a0-c6797a846486" />
 
 
-After completing the host discovery scan, I accessed the **Topology** tab in Zenmap to visualize the network structure. I enabled the topology legend and exported the resulting network map as a **PDF**, as required by the practical exercise.
-<img width="1353" height="588" alt="image" src="https://github.com/user-attachments/assets/d3f91b2d-f5ad-4260-b6fd-0473bec554d6" />
+
+
+
+
 
 
 ###
 
 
 
-## 4. Risk Analysis / Impact
-
-The reconnaissance and network-scanning exercises produced several findings that may have security implications. The observations below summarize the identified exposures and their potential impact.
-
-| # | Risk / Finding | Evidence / Observation | Potential Impact | Risk Level |
-|---|---|---|---|---|
-| 1 | **Web technology details exposed** | WhatWeb detected **WordPress** and **WP Download Manager** on the website. | Technology and version details could help an attacker identify components that may require additional security assessment. | 🟠 **Medium** |
-| 2 | **Web server IP address exposed** | Nslookup mapped the domain to **192.232.216.135**. | The information provides visibility into the network location associated with the web service. | 🟡 **Low** |
-| 3 | **HTTP response information disclosed** | cURL returned HTTP headers and revealed the `/wp-json/` endpoint. | The exposed information may support application fingerprinting and additional reconnaissance. | 🟡 **Low** |
-| 4 | **WAF technology detected** | Wafw00f identified **ModSecurity (SpiderLabs)** as the deployed WAF. | Identifying the security technology provides information about the web application's defensive infrastructure. | 🟡 **Low** |
-| 5 | **DNS infrastructure exposed** | DNSRecon returned DNS, mail-server, and service-related records. | The information could be combined with other findings to develop a broader picture of the target infrastructure. | 🟠 **Medium** |
-| 6 | **Multiple active hosts discovered** | Zenmap detected multiple responsive devices on the local network. | Unidentified or unauthorized devices could increase the potential attack surface of the local network. | 🟠 **Medium** |
-
-### Risk Level Classification
-
-- 🟡 **Low:** Limited exposure with relatively low immediate security impact.
-- 🟠 **Medium:** Information that could contribute to further reconnaissance or increase exposure.
-- 🔴 **High:** Findings that could present a significant security risk and require prompt attention.
-
-###
-
-## 5. Security Recommendations
-
-- Keep WordPress, plugins, themes, and other web technologies regularly updated.
-- Minimize unnecessary technical information exposed through HTTP headers and public endpoints.
-- Review and secure DNS records and remove outdated or unnecessary entries.
-- Maintain and regularly update WAF security rules and configurations.
-- Monitor the local network for unknown or unauthorized devices.
-- Conduct periodic vulnerability assessments and network security scans.
-- Apply strong access controls to administrative and sensitive services.
-- Enable security logging and monitor for suspicious network activity.
-- Protect sensitive configuration and system information from public exposure.
-- Document findings and verify that identified security issues are properly addressed.
 
 
 ## 6. Conclusion
