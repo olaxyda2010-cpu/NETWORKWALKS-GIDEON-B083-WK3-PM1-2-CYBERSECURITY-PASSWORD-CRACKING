@@ -108,11 +108,16 @@ Overall, the practical strengthened my understanding of **password hashing, hash
 
 ## 🔭 Tools and Resources ##
 
-To install 7-Zip: [https://7-zip.org/download.html.](https://drive.usercontent.google.com/download?id=1YeyV7pwN6gRyKGUKqwyhGv0DKf_vFf8j&export=download&authuser=0&confirm=t&uuid=4c9b5f3b-3360-4039-bc23-2ccec70591a9&at=AMrWOn2lg6GmeJ2__xZ1Hm6WEUdN:1790056324880)
+To install JTR CLI AND GUI : [https://7-zip.org/download.html.](https://drive.usercontent.google.com/download?id=1YeyV7pwN6gRyKGUKqwyhGv0DKf_vFf8j&export=download&authuser=0&confirm=t&uuid=4c9b5f3b-3360-4039-bc23-2ccec70591a9&at=AMrWOn2lg6GmeJ2__xZ1Hm6WEUdN:1790056324880)
 
-To install VirtualBox Machine: https://virtualbox.org/wiki/Downloads.
+[https://7-zip.org/download.html.](https://drive.usercontent.google.com/download?id=1ecZTIyGrmAIy07phmZO_rm9Ps1y0aHUs&export=download&authuser=0&confirm=t&uuid=4c4320bf-4bdf-4198-97e1-7a3f782b424f&at=AMrWOn0WmMAw0jGgqkQ5w-AJ3G7f:1790069703772)
 
-To install Kali Linux: https://kali.org/get-kali.
+The Locked PDF files and the Networkwalks online tools:
+[](https://networkwalks.com/wp-content/uploads/2026/08/Password-Cracking-with-NW-Tools-v1.pdf)
+[](https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF1.pdf)
+[](https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF2.pdf)
+[](https://networkwalks.com/wp-content/uploads/2026/08/My-Locked-PDF3.pdf)
+
 
 ---
 **👤 Author**
